@@ -5,61 +5,162 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SpongeBob</title>
-<link rel="stylesheet" href="main.dc9b907c.css"></head>
+    <style>body {
+        }
+
+        main {
+            min-height: 100vh;
+            display: flex;
+            min-width: 100vw;
+        }
+
+        .sponge-bob {
+            position: relative;
+            min-height: 540px;
+            min-width: 780px;
+            width: 50vw;
+            height: 100vh;
+
+        }
+        .mobile-scale {
+            transform: scale(.5) translateY(-175px);
+            min-height: 50vh;
+        }
+        .htmlWrapper {
+            width: 50vw;
+            height: 100vh;
+        }
+        #html {
+            width: 100%;
+            height: 100%;
+            overflow: scroll;
+
+        }
+        #html::-webkit-scrollbar {
+            width: 0;
+        }
+
+        #style {
+
+        }
+
+        .buttons {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .buttons > button {
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        @media screen and ( max-width :1100px) {
+            main {
+                flex-direction: column;
+            }
+            #html {
+                padding-bottom: 10px;
+            }
+            .sponge-bob {
+                height: unset;
+                min-height: 50vh;
+            }
+            .wrapper {
+                height: 50vh;
+                min-height: 540px;
+                flex-grow: 1;
+
+            }
+            .htmlWrapper {
+                width: 100vw;
+                height: 360px;
+            }
+        }
+        @media screen and (max-width:700px){
+            .sponge-bob {
+                transform: scale(.5) translateY(-175px);
+            }
+            .wrapper {
+                min-height: unset;
+            }
+        }
+        .htmlWrapper {
+            position: relative;
+        }</style>
+<link rel="stylesheet" href="main.90dc6715.css"></head>
 <body>
+    <style id="style"></style>
+
     <main>
-        <div id="spongeBob" class="sponge-bob">
-            <div class="eye left">
-                <div class="eyeball"></div>
+        <div class="htmlWrapper" id="htmlWrapper">
+            <div id="html">
+
             </div>
-            <div class="eye right">
-                <div class="eyeball"></div>
+            <div class="buttons" id="buttons">
+                <button id="pause">暂停</button>
+                <button id="play">播放</button>
+                <button id="slowly">慢速</button>
+                <button id="middle">中速</button>
+                <button id="fast">快速</button>
             </div>
-            <div class="eyelash left">
-                <div class="eyelash1"></div>
-                <div class="eyelash2"></div>
-                <div class="eyelash3"></div>
-            </div>
-            <div class="eyelash right">
-                <div class="eyelash4"></div>
-                <div class="eyelash5"></div>
-                <div class="eyelash6"></div>
-            </div>
-            <div class="nose"></div>
-            <div class="cheek left">
-                <div class="pimple1"></div>
-                <div class="pimple2"></div>
-                <div class="pimple3"></div>
-            </div>
-            <div class="cheek right">
-                <div class="pimple4"></div>
-                <div class="pimple5"></div>
-                <div class="pimple6"></div>
-            </div>
-            <div class="mouth">
-                <div class="corners left"></div>
-                <div class="corners right"></div>
-                <div class="lip"></div>
-                <div class="tooth">
-                    <div class=" left"></div>
-                    <div class=" right"></div>
+        </div>
+
+        <div class="wrapper">
+            <div id="spongeBob" class="sponge-bob">
+                <div class="eye left">
+                    <div class="eyeball"></div>
                 </div>
+                <div class="eye right">
+                    <div class="eyeball"></div>
+                </div>
+                <div class="eyelash left">
+                    <div class="eyelash1"></div>
+                    <div class="eyelash2"></div>
+                    <div class="eyelash3"></div>
+                </div>
+                <div class="eyelash right">
+                    <div class="eyelash4"></div>
+                    <div class="eyelash5"></div>
+                    <div class="eyelash6"></div>
+                </div>
+                <div class="nose"></div>
+                <div class="cheek left">
+                    <div class="pimple1"></div>
+                    <div class="pimple2"></div>
+                    <div class="pimple3"></div>
+                </div>
+                <div class="cheek right">
+                    <div class="pimple4"></div>
+                    <div class="pimple5"></div>
+                    <div class="pimple6"></div>
+                </div>
+                <div class="mouth">
+                    <div class="corners left"></div>
+                    <div class="corners right"></div>
+                    <div class="lip"></div>
+                    <div class="tooth">
+                        <div class=" left"></div>
+                        <div class=" right"></div>
+                    </div>
 
 
+                </div>
+                <div class="jaw">
+                    <div class="left"></div>
+                    <div class="right"></div>
+                </div>
+                <div class="hole  n1"></div>
+                <div class="hole  n2"></div>
+                <div class="hole  n3"></div>
+                <div class="hole  n4"></div>
+                <div class="hole  n5"></div>
+                <div class="hole  n6"></div>
+                <div class="hole  n7"></div>
             </div>
-            <div class="jaw">
-                <div class="left"></div>
-                <div class="right"></div>
-            </div>
-            <div class="hole  n1"></div>
-            <div class="hole  n2"></div>
-            <div class="hole  n3"></div>
-            <div class="hole  n4"></div>
-            <div class="hole  n5"></div>
-            <div class="hole  n6"></div>
-            <div class="hole  n7"></div>
+
         </div>
     </main>
-    <script src="main.12ec9543.js"></script>
+    <script src="main.6f3dcde6.js"></script>
 </body>
 </html>

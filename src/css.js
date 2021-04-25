@@ -1,28 +1,15 @@
-*{margin: 0 ; padding: 0 ; box-sizing: border-box; }
-*::before, *::after{padding: 0;margin: 0;box-sizing: border-box}
+export default  `
 
-
-
-
-
-main {
-    background-color:#fff400 ;
-    min-width: 100vw;
-    min-height: 100vh;
-
-}
-
-.sponge-bob {
-
-    position: relative;
-    min-height: 540px;
-
-}
-.mobile-scale {
-    transform: scale(.5);
+/*准备海绵宝宝的肤色*/
+.wrapper {
+    background-color: #fff400;
+    display: flex;
+    justify-content: center;
 }
 
 
+
+/*准备海绵宝宝的眼睛*/
 .eye {
     border: 5px solid black;
     border-radius: 50%;
@@ -41,6 +28,8 @@ main {
 .eye.right {
     transform: translate(-4%);
 }
+
+/*准备海绵宝宝的瞳孔*/
 
 .eye .eyeball {
 
@@ -74,6 +63,9 @@ main {
     border-radius: 50%;
 
 }
+
+/*准备海绵宝宝的眉毛*/
+
 .eyelash {
     width: 100px;
     height: 30px;
@@ -101,6 +93,8 @@ main {
 .eyelash3 , .eyelash6{
     transform: rotate(.05turn) translatey(10px);
 }
+/*准备海绵宝宝的鼻子*/
+
 .nose {
     border: 5px solid black;
     width: 46px;
@@ -114,6 +108,7 @@ main {
     border-bottom: none;
 
 }
+/*准备海绵宝宝的脸颊*/
 
 .cheek {
     border: 4px solid #d9241c;
@@ -142,6 +137,9 @@ main {
     border-radius:50%;
     background-color: #d9241c;
 }
+
+/*准备海绵宝宝的痘痘*/
+
 .pimple1 {
     position: absolute;
     left: 30%;
@@ -177,6 +175,8 @@ main {
     top: 65%;
 }
 
+/*准备海绵宝宝的嘴巴*/
+
 .mouth {
     /*border:1px solid red;*/
     width: 400px;
@@ -186,6 +186,7 @@ main {
     top: 290px;
     transform: translate(-50%);
 }
+/*准备海绵宝宝的嘴角*/
 .corners {
     border : 1px solid transparent;
     border-top:5px solid black ;
@@ -204,6 +205,9 @@ main {
     transform: rotate(25deg);
 
 }
+
+/*准备海绵宝宝的嘴唇*/
+
 .lip {
     width: 380px;
     height: 80px;
@@ -227,6 +231,8 @@ main {
     top: -128px;
 
 }
+/*准备海绵宝宝的牙齿*/
+
 .tooth {
     width: 90px;
     height: 50px;
@@ -251,6 +257,8 @@ main {
 .tooth .right {
     transform: rotate(-5deg);
 }
+
+/*准备海绵宝宝的下巴*/
 
 .jaw {
     width:  200px;
@@ -280,6 +288,7 @@ main {
     transform: rotate(-12deg) translateX(-11px);
 }
 
+/*准备海绵宝宝身上的孔*/
 
 .hole {
     border-radius: 50%;
@@ -338,5 +347,4 @@ main {
 
 }
 
-
-/*# sourceMappingURL=main.dc9b907c.css.map */
+`
